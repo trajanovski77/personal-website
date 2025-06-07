@@ -1,0 +1,435 @@
+body{
+    margin:0;
+    background-image: url("pomaloPoz.gif");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    font-family: "Euphemia UCAS";
+}
+header{
+    height:92px;
+    margin-top:0;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: black;
+}
+.navbar {
+    margin: 0 0 0 0;
+    height:60px;
+    flex-wrap: wrap;
+    padding:1em;
+    justify-self: flex-end;
+    list-style: none;
+    display: flex;
+    background-color: black;
+    color:white;
+    justify-content: flex-end;
+}
+.navbar li a{
+    color:white;
+    text-decoration: none;
+    padding: 1em;
+
+}
+.navbar li a:hover{
+    background-color: #3a3a3a;
+    scale:10%;
+}
+.navbar li {
+    margin: auto;
+    color:white;
+}
+.logo{
+    padding: 1em;
+    margin: 1em 1em 1em 1em;
+    justify-self: flex-start;
+}
+.logo span{
+    text-shadow: gray 3px 2px;
+
+    position: relative;
+    top:-5px;
+    padding: 1em;
+    margin: 1em 1em 1em 1em;
+    color:white;
+}
+.homesec{
+    height: calc(100vh - 60px);
+    display:flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    animation: grow;
+    animation-duration: 1.5s;
+}
+.welcome{
+    color:white;
+    letter-spacing: 0.2em;
+    font-weight: bold;
+    font-family: "Euphemia UCAS";
+    font-size: 2em;
+}
+.name{
+    color:white;
+    font-family: "Euphemia UCAS";
+    font-size:1.2em;
+}
+#contact{
+    background-color: black;
+    border: white solid 2px;
+    padding:10px;
+    color:white;
+    margin-right:10px;
+}
+#contact a{
+    color:white;
+    text-decoration: none;
+    font-family: "Euphemia UCAS";
+
+}
+#contact:hover{
+    background-color: #3a3a3a;
+}
+.aboutsec {
+    height: calc(100vh - 60px);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+.aboutsec:nth-of-type(2){
+    margin-top:150px;
+    height:40vh;
+}
+.about-container{
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    flex-wrap:wrap;
+}
+#about-btn{
+    width:106.73px;
+    background-color: black;
+    border: white solid 2px;
+    padding:10px;
+    color:white;
+    margin-right: 10px;
+}
+#about-btn a{
+    color:white;
+    text-decoration: none;
+    font-family: "Euphemia UCAS";
+
+}
+#services-btn{
+    width:106.73px;
+    background-color: black;
+    border: white solid 2px;
+    padding:10px;
+    color:white;
+}
+#services-btn a{
+    color:white;
+    text-decoration: none;
+    font-family: "Euphemia UCAS";
+
+}
+#services-btn:hover{
+    background-color: #3a3a3a;
+}
+.btn-container{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-around;
+}
+#about-btn:hover{
+    background-color: #3a3a3a;
+}
+.about-text{
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    color:black;
+    width:50%;
+    padding:20px;
+    text-align:justify;
+    font-family: "Euphemia UCAS";
+    margin-top:30px;
+    margin-right: 50px;
+    margin-bottom:50px;
+
+}
+.photo {
+    margin-top:0;
+}
+.photo img{
+    padding: 0.5em;
+    border: black solid 2px;
+    margin-top:10px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    width: 300px ;
+    margin-bottom:50px;
+}
+.prev-projects{
+    margin-top:50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height:400px;
+    width:90%;
+    margin-bottom: 400px;
+    animation: fadeInUp 1s ease-out forwards;
+    animation-delay: 0.3s;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;    margin-top:100px;
+}
+.about-body{
+    background: white;
+    background: radial-gradient(circle, #fff 0%, #fff 40%, black 100%);
+
+}
+
+@keyframes grow {
+    50%{transform: scale(2,2)}
+}
+.about-container {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeInUp 1s ease-out forwards;
+    animation-delay: 0.3s;
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.coverflow {
+    position: relative;
+    width: 80%;
+    margin: 50px auto;
+    margin-bottom: 10px;
+    perspective: 1000px;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+.slides {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 400px;
+}
+
+.slide {
+    position: absolute;
+    transition: transform 0.5s ease, z-index 0.5s;
+    opacity: 0.6;
+}
+.slide img {
+    height: 250px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+.slide img:hover {
+    transform: scale(1.05);
+}
+
+/* When slide 1 is selected */
+#s1:checked ~ .slides .slide1 {
+    transform: translateX(0) scale(1.2);
+    z-index: 3;
+    opacity: 1;
+}
+#s1:checked ~ .slides .slide2 {
+    transform: translateX(200px) scale(0.9);
+    z-index: 2;
+}
+#s1:checked ~ .slides .slide3 {
+    transform: translateX(400px) scale(0.8);
+    z-index: 1;
+}
+
+/* When slide 2 is selected */
+#s2:checked ~ .slides .slide1 {
+    transform: translateX(-200px) scale(0.9);
+    z-index: 2;
+}
+#s2:checked ~ .slides .slide2 {
+    transform: translateX(0) scale(1.2);
+    z-index: 3;
+    opacity: 1;
+}
+#s2:checked ~ .slides .slide3 {
+    transform: translateX(200px) scale(0.9);
+    z-index: 2;
+}
+
+/* When slide 3 is selected */
+#s3:checked ~ .slides .slide1 {
+    transform: translateX(-400px) scale(0.8);
+    z-index: 1;
+}
+#s3:checked ~ .slides .slide2 {
+    transform: translateX(-200px) scale(0.9);
+    z-index: 2;
+}
+#s3:checked ~ .slides .slide3 {
+    transform: translateX(0) scale(1.2);
+    z-index: 3;
+    opacity: 1;
+}
+.captions {
+    text-align: center;
+    color: white;
+    font-family: "Euphemia UCAS", sans-serif;
+    min-height: 1.5em;
+}
+
+.caption {
+    display: none;
+    transition: opacity 0.3s ease;
+}
+
+#s1:checked ~ .captions .caption1,
+#s2:checked ~ .captions .caption2,
+#s3:checked ~ .captions .caption3 {
+    color:black;
+    display:inline-block;
+    font-family: "Euphemia UCAS", sans-serif;
+    text-shadow: black 1px 1px;
+    font-weight: bolder;
+    font-size: larger;
+}
+h2 {
+    text-align: center;
+}
+
+.services-body{
+    background: black;
+    text-align:center;
+    background: white;
+    background: radial-gradient(circle, #fff 0%, #fff 60%, black 100%);
+}
+.contact-body{
+    background: black;
+    color:white;
+}
+.contact-container{
+    transform: translateY(50px);
+    animation: fadeInUp 1s ease-out forwards;
+    text-align: center;
+    display:flex;
+    font-family: "Euphemia UCAS", sans-serif;
+    justify-content: space-around;
+    align-items:center;
+    flex-wrap:wrap;
+}
+.contact-container fieldset{
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    color:white;
+    font-family: "Euphemia UCAS", sans-serif;
+    width:30%;
+    padding:20px;
+    background: black;
+    text-align:justify;
+    font-family: "Euphemia UCAS";
+    margin-top:30px;
+    margin-right: 50px;
+    margin-bottom:50px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+
+}
+.contact-container label{
+    text-indent: 5px;
+    font-family: "Euphemia UCAS";
+    font-weight: bold;
+    font-size: 15px;
+    margin-right:0;
+}
+.contact-container input{
+    color:white;
+    background: black;
+    border:white solid 1px;
+    margin:5px 5px 5px 5px;
+    width:150px;
+    height:35px;
+}
+#contact-mail{
+    width:400px;
+}
+textarea{
+    color:white;
+    background: black;
+    border:white solid 1px;
+    margin:5px 5px 5px 5px;
+    height: 100px;
+    width:300px;
+    resize: vertical; /* allows manual resizing */
+}
+#send-btn {
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    border: 2px solid white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#send-btn:hover {
+    background-color: #3a3a3a;
+    color: white;
+}
+.contact-graphic img {
+    width: 300px;
+    max-width: 100%;
+}
+
+.contact-graphic {
+    text-align: center;
+    color: white;
+    margin: 30px 0;
+}
+
+.services-container{
+    display:flex;
+    justify-content: center;
+    flex-wrap:wrap;
+    align-items: center;
+    margin-top:50px;
+    width:90%;
+}
+.services-item{
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    background: white;
+    width:15%;
+    margin: 20px 20px 20px 20px;
+    height:150px;
+}
+.services-sec{
+    animation: grow;
+    animation-duration: 1s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.services-item:hover{
+    scale:200%;
+}
+.img-container{
+    display: flex;
+    justify-content: space-evenly;
+
+}
