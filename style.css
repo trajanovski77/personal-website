@@ -242,7 +242,6 @@ input[type="radio"] {
     transform: scale(1.05);
 }
 
-/* When slide 1 is selected */
 #s1:checked ~ .slides .slide1 {
     transform: translateX(0) scale(1.2);
     z-index: 3;
@@ -257,7 +256,6 @@ input[type="radio"] {
     z-index: 1;
 }
 
-/* When slide 2 is selected */
 #s2:checked ~ .slides .slide1 {
     transform: translateX(-200px) scale(0.9);
     z-index: 2;
@@ -272,7 +270,6 @@ input[type="radio"] {
     z-index: 2;
 }
 
-/* When slide 3 is selected */
 #s3:checked ~ .slides .slide1 {
     transform: translateX(-400px) scale(0.8);
     z-index: 1;
@@ -290,7 +287,6 @@ input[type="radio"] {
     text-align: center;
     color: white;
     font-family: "Euphemia UCAS", sans-serif;
-    min-height: 1.5em;
 }
 
 .caption {
@@ -354,7 +350,7 @@ h2 {
     text-indent: 5px;
     font-family: "Euphemia UCAS";
     font-weight: bold;
-    font-size: 15px;
+    font-size: 12px;
     margin-right:0;
 }
 .contact-container input{
@@ -366,7 +362,7 @@ h2 {
     height:35px;
 }
 #contact-mail{
-    width:400px;
+    width:430px;
 }
 textarea{
     color:white;
@@ -374,8 +370,8 @@ textarea{
     border:white solid 1px;
     margin:5px 5px 5px 5px;
     height: 100px;
-    width:300px;
-    resize: vertical; /* allows manual resizing */
+    width:430px;
+    resize: vertical;
 }
 #send-btn {
     padding: 10px 20px;
@@ -436,4 +432,11 @@ textarea{
 .logo span a {
     text-decoration: none;
     color:white;
+}
+.name-contain{
+    display:flex;
+    align-items: center;
+}
+.name-contain fieldset{
+    width:130px;
 }
